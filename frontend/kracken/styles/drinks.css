@@ -1,0 +1,55 @@
+#drink_section {
+    display: flex;
+    background-color: transparent;
+    margin-top: 30px;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+#drink_options {
+
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 600px;
+    background-color: rgba(255, 246, 246, 0.7);
+    border-radius: 30px;
+}
+
+#drink_row1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.smile_drink, .catrina_drink, .cat_drink, .Kracken_drink, .lovers_drink, .heart_drink{
+    height: auto;
+    width: auto;
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+}
+
+.smile_logo, .cartrina_logo, .cat_logo, .kracken_logo, .lovers_logo, .heart_logo {
+    height: 220px;
+}
+
+#drink_row2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    background-color: transparent;
+}
+
+.drink1 {
+    display: 1;
+    flex: 1;
+}

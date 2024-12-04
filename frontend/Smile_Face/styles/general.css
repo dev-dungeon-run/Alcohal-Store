@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(to right, #000000, #69653f, #b3b736, #e3df03);
+    background-image: url('img/smile_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-blend-mode: overlay; 
+}

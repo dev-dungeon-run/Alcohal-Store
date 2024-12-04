@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kracken</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/drinks.css">
+    <link rel="stylesheet" href="styles/general/general.css">
+    <link rel="stylesheet" href="styles/firstAdd.css">
+    <link rel="stylesheet" href="styles/contact_info.css">
+    <link rel="stylesheet" href="styles/adds.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lacquer&family=Mea+Culpa&family=Rye&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #000000, #69653f, #b3b736, #e3df03);
+        background-image: url('img/cracken_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        }
+
+
+    #nav_bar{
+        background-image: url('img/navbar_background.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-color: none;
+    }
+    
+    #drink_options {
+        background-image: url('img/kracken.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(43, 107, 162, 0.7); 
+        background-blend-mode: overlay; 
+    }
+
+
+
+
+
+    #first_add_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #ads {
+        display: flex;
+        flex: 1;
+        max-width: 1400px;
+        padding: 19px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #add1 {
+        display: flex;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: "Lacquer", system-ui;
+    }
+
+    #add1_image {
+        background-image: url('img/add1_background.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(29, 107, 152, 0.2); 
+        background-blend-mode: overlay; 
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding: 10px;
+        
+    }
+
+    #title_image1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding-right: 20px;
+        padding-right: 40px;
+    }
+
+    .title1 {
+        font-size: 300%;
+        margin-left: 30px;
+    }
+
+    .img1 {
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .text1 {
+        font-size: 200%;
+    }
+
+    #price1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .price1 {
+        font-size: 200%;
+        margin-left: 30px;
+    }
+
+    .addToCart1 {
+        font-size: 200%;
+        background-color: transparent;
+        border: none;
+        margin-right: 20%;
+        border-radius: 30%;
+        font-family: "Lacquer", system-ui;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #add2 {
+        display: flex;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: "Lacquer", system-ui;
+    }
+
+    #add2_image {
+        background-image: url('img/add2_background.png');
+        box-shadow: 4px 4px 10px rgba(34, 33, 33, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(29, 107, 152, 0.2); 
+        background-blend-mode: overlay; 
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding: 10px;
+        
+    }
+
+    #title_image2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding-right: 20px;
+        padding-right: 40px;
+    }
+
+    .title2 {
+        font-size: 300%;
+        margin-left: 30px;
+    }
+
+    .img2 {
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 80px;
+        border-color: #000000;
+        border-width: 6px;
+        border-style: solid;
+    }
+
+    .text2 {
+        font-size: 200%;
+    }
+
+    #price2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .price2 {
+        font-size: 200%;
+        margin-left: 30px;
+    }
+
+    .addToCart2 {
+        font-size: 200%;
+        font-family: "Lacquer", system-ui;
+        background-color: transparent;
+        border: none;
+        margin-right: 20%;
+        border-radius: 30%;
+    }
+    
+    
+</style>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div id="nav_bar" >
+        <div id="home_button">
+            <a href="../Kracken/Kracken.html">
+                <button class="home_button">
+                    <img class="home_smile" src="logos/kracken.png" alt="Home">
+                </button>
+            </a>
+            
+        </div>
+        
+        <div id="drink_category">
+            <a href="../Tequila/Tequila.html">
+                <button class="tequila">Tequila</button>
+            </a>
+            <a href="../Whiskey/Whiskey.html">
+                <button class="whiskey">Whiskey</button>
+            </a>
+            <a href="../Wine/Wine.html">
+                <button class="wine">Wine</button>
+            </a>
+            <a href="../Rum/Rum.html">
+                <button class="rum">Rum</button>
+            </a>
+            
+        </div>
+        <div id="cart">
+            <button class="cart">
+                <img src="img/cart.png" alt="" class="cart1">
+            </button>
+        </div>
+    </div>
+
+    <div id="drink_section">
+        <div id="drink_options">
+            <div id="drink_row1">
+                <div id="drink">
+                    <a href="../Smile_Face/smileFace.html">
+                        <button class="smile_drink">
+                            <img src="logos/smile.png" alt="" class="smile_logo">
+                        </button>
+                    </a>
+                    <a href="../Catrina/Catrina.html">
+                        <button class="catrina_drink">
+                            <img src="logos/muerte.png" alt="" class="cartrina_logo">
+                        </button>
+                    </a>
+                    <a href="../Cat/Cat.html">
+                        <button class="cat_drink">
+                            <img src="logos/cat_logo.png" alt="" class="cat_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="drink_row2">
+                <div id="drink">
+                    <a href="../Lovers/Lovers.html">
+                        <button class="lovers_drink">
+                            <img src="logos/lovers.png" alt="" class="lovers_logo">
+                        </button>
+                    </a>
+                    <a href="../Heart/Heart.html">
+                        <button class="heart_drink">
+                            <img src="logos/heart.png" alt="" class="heart_logo">
+                        </button>
+                    </a>
+                    <a href="../Kracken/Kracken.html">
+                        <button class="Kracken_drink">
+                            <img src="logos/kracken.png" alt="" class="kracken_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="first_add_section">
+        <div id="ads">
+            <div id="add1">
+                <div id="add1_image">
+                    <div id="title_image1">
+                        <img src="img/cracken_bottle1.png" alt="" class="img1">
+                        <p class="title1">
+                            Kracken
+                        </p>
+                        
+                    </div>
+                    <div id="text1">
+                        <p class="text1">
+                            Introducing the Kracken Rum, a premium, bold experience that commands attention. Inspired by the deep, mysterious seas and the terror of the Kraken, this bottle is more than just a drink; it’s a statement.
+
+Crafted for the bold and adventurous, Kracken Rum boasts a rich, smooth flavor with hints of dark spices, vanilla, and oak. The unique black-and-white design, with intricate tentacles and a skull emblazoned on its surface, embodies the raw power and legendary fear of the Kraken.
+
+At $699.99, this limited-edition rum is not just for collectors; it is for those who dare to venture into the depths.
+                        </p>
+                    </div>
+                    <div id="price1">
+                        <p class="price1">$699.99</p>
+                        <button onclick="addToCart({ id: 3, name: 'Kracken', price: 699.99 })">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADD2 -->
+            <div id="add2">
+                <div id="add2_image">
+                    <div id="title_image2">
+                        <img src="img/cracken_bottle2.png" alt="" class="img2">
+                        <p class="title2">
+                            Kracken
+                        </p>
+                        
+                    </div>
+                    <div id="text2">
+                        <p class="text2">
+                            Set sail on the adventure of a lifetime with Kracken Rum, a treasure born from the depths of the ocean. A sailor’s dream come true, this legendary rum embodies the untamed spirit of the seas and the fearsome Kraken that dwells below.
+With every sip, taste the dark, rich blend of spices, oak, and vanilla that is as bold as the sea itself. The bottle, adorned with intricate tentacles and a skull, mirrors the mythical creature’s power and mystique.
+At $699.99, Kracken Rum is not just a drink, it is a legend. Perfect for the sailor at heart who dares to embrace the mystery of the deep blue.
+
+The Kraken calls. Will you answer?
+                        </p>
+                    </div>
+                    <div id="price2">
+                        <p class="price2">$699.99</p>
+                        <button onclick="addToCart({ id: 3, name: 'Kracken', price: 699.99 })">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CONTACT INFO -->
+    <div id="contact_info_section">
+        <div id="contact_info">
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 123 Whisky Lane, Suite 456, Barrelsville, KY 40204, USA</p>
+                <p><strong>Phone:</strong> 1-800-SMILE-ON (1-800-764-5366)</p>
+                <p><strong>Email:</strong> <a href="mailto:cheers@MeltedSmileWhisky.com">cheers@MeltedSmileWhisky.com</a></p>
+                <p><strong>Website:</strong> <a href="https://www.MeltedSmileWhisky.com">www.MeltedSmileWhisky.com</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../Cart/cart.js"></script>   
+    
+</body>
+</html>

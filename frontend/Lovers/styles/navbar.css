@@ -1,0 +1,95 @@
+
+
+
+#home_button {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-right: 30px;
+    width: 90px;
+}
+.home_button {
+    height: 60px;
+    width: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.home_smile {
+    border: rgb(124, 121, 73);
+    border-radius: 190px;
+    border-style: solid;
+    border-width: 3px;
+    height: 60px;
+    width: 100%;
+    object-fit: fill;
+    opacity: 1;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+#drink_category {
+    display: flex;
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    
+}
+
+.tequila {
+    font-size: 30px;
+    color: rgb(174, 98, 5);
+    background-color: transparent;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 700;
+    border: none;
+}
+
+.whiskey {
+    font-size: 30px;
+    color: rgb(103, 112, 7);
+    background-color: transparent;
+    font-family: "Rye", serif;
+    border: none;
+}
+
+.wine {
+    font-size: 30px;
+    color: rgb(20, 17, 17);
+    background-color: transparent;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 700;
+    border: none;
+}
+
+.rum {
+    font-size: 30px;
+    color: rgb(205, 2, 13);
+    background-color: transparent;
+    font-family: "Lacquer", system-ui;
+    font-weight: 700;
+    border: none;
+}
+
+#cart {
+    display: flex;
+    max-width: 100px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: transparent;
+}
+.cart1 {
+    height: 30px;
+}

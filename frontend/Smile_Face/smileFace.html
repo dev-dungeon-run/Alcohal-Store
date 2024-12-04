@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melted Smile</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/drinks.css">
+    <link rel="stylesheet" href="styles/general/general.css">
+    <link rel="stylesheet" href="styles/firstAdd.css">
+    <link rel="stylesheet" href="styles/contact_info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lacquer&family=Mea+Culpa&family=Rye&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #000000, #69653f, #b3b736, #e3df03);
+        background-image: url('img/smile_background.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        }
+
+
+    #nav_bar{
+        background-image: url('img/navbar_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-color: none;
+    }
+
+    #drink_options {
+        background-image: url('img/melted_smile.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(82, 77, 16, 0.7); 
+        background-blend-mode: overlay; 
+    }
+
+
+    #bar_scene {
+        display: flex;
+        width: 100%;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar {
+        width: 1400px;
+        border-radius: 90px;
+    }
+
+    #second_add_section {
+        display: flex;
+
+    }
+
+
+    
+
+
+    .contact-box {
+        background-color: #a1a08d;
+        color: #333;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .contact-box h2 {
+        margin: 0;
+        font-size: 20px;
+        color: #444;
+    }
+    .contact-box p {
+        margin: 5px 0;
+    }
+    .contact-box a {
+        color: #555;
+        text-decoration: none;
+    }
+
+    
+    
+</style>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div id="nav_bar" >
+        <div id="home_button">
+            <a href="../Smile_Face/smileFace.html">
+                <button class="home_button">
+                    <img class="home_smile" src="logos/smile.png" alt="Home">
+                </button>
+            </a>
+        </div>
+        
+        <div id="drink_category">
+            <a href="../Tequila/Tequila.html">
+                <button class="tequila">Tequila</button>
+            </a>
+            <a href="../Whiskey/Whiskey.html">
+                <button class="whiskey">Whiskey</button>
+            </a>
+            <a href="../Wine/Wine.html">
+                <button class="wine">Wine</button>
+            </a>
+            <a href="../Rum/Rum.html">
+                <button class="rum">Rum</button>
+            </a>
+            
+        </div>
+        <div id="cart">
+            <a href="../Cart/cart.html">
+                <button class="cart">
+                    <img src="img/cart.png" alt="" class="cart1">
+                </button>
+            </a>
+            
+        </div>
+    </div>
+
+    <div id="drink_section">
+        <div id="drink_options">
+            <div id="drink_row1">
+                <div id="drink">
+                    <a href="../Smile_Face/smileFace.html">
+                        <button class="smile_drink">
+                            <img src="logos/smile.png" alt="" class="smile_logo">
+                        </button>
+                    </a>
+                    <a href="../Catrina/Catrina.html">
+                        <button class="catrina_drink">
+                            <img src="logos/muerte.png" alt="" class="cartrina_logo">
+                        </button>
+                    </a>
+                    <a href="../Cat/Cat.html">
+                        <button class="cat_drink">
+                            <img src="logos/cat_logo.png" alt="" class="cat_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="drink_row2">
+                <div id="drink">
+                    <a href="../Lovers/Lovers.html">
+                        <button class="lovers_drink">
+                            <img src="logos/lovers.png" alt="" class="lovers_logo">
+                        </button>
+                    </a>
+                    <a href="../Heart/Heart.html">
+                        <button class="heart_drink">
+                            <img src="logos/heart.png" alt="" class="heart_logo">
+                        </button>
+                    </a>
+                    <a href="../Kracken/Kracken.html">
+                        <button class="Kracken_drink">
+                            <img src="logos/kracken.png" alt="" class="kracken_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- First Addvertisment for Melted Smile -->
+    <div id="add1">
+        <div id="add1_section">
+            <div id="bottle_mirror">
+                <img src="img/mirrored_bottle.png" alt="" class="mirrored_bottle">
+                <div class="add_to_cart">
+                    <button onclick="addToCart({ id: 1, name: 'Melted_Smile', price: 399.99 })">Add to Cart</button>
+                    <p class="price1">$399.99</p>
+                </div>
+            </div>
+    
+            <div id="word_box">
+                <div id="title_logo">
+                    <div id="Title">
+                        <p class="melted">Melted</p>
+                        <p class="smile">Smile</p>
+                    </div>
+                    <div id="logo">
+                        <img src="logos/smile.png" alt="" class="logo_add">
+                    </div>
+                </div>
+                <div id="description">
+                    <p class="description"> Buy Melted Smile Whisky – A bold blend of smooth flavor and playful spirit. With its unique melting smile logo and striking black and yellow design, this whisky brings both style and taste to your glass. Whether you're at the bar or hosting a party, Melted Smile is the drink that makes every moment unforgettable. Get yours today!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bar_scene">
+        <div id="bar">
+            <img src="img/full_legth_bar_scene.png" alt="" class="bar">
+        </div>
+    </div>
+
+    <div id="second_add_section">
+        <div id="second_add">
+            <div id="bottle2">
+                <img src="" alt="" class="bottle2">
+                <div id="add_word2">
+                    <p class="add_word2">words</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div id="contact_info_section">
+        <div id="contact_info">
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 123 Whisky Lane, Suite 456, Barrelsville, KY 40204, USA</p>
+                <p><strong>Phone:</strong> 1-800-SMILE-ON (1-800-764-5366)</p>
+                <p><strong>Email:</strong> <a href="mailto:cheers@MeltedSmileWhisky.com">cheers@MeltedSmileWhisky.com</a></p>
+                <p><strong>Website:</strong> <a href="https://www.MeltedSmileWhisky.com">www.MeltedSmileWhisky.com</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../Cart/cart.js"></script>    
+</body>
+</html>

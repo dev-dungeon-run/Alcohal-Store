@@ -1,0 +1,93 @@
+#add1_section {
+    display: flex;
+    background-color: rgb(166, 144, 33, 0.9);
+    border-radius: 90px;
+    padding: 20px;
+    height: 600px;
+    width: 1300px;
+    right: 20px;
+    left: 20px;
+    margin: 20px;
+}
+
+#add1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottle_mirror {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.mirrored_bottle {
+    height: 80%;
+}
+
+#word_box {
+    display: flex;
+    flex-direction: column;
+    font-family: "Rye", serif;
+    width: 45%;
+    height: 90%;
+    background-color: rgb(118, 118, 118, 0.6);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+#title_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+}
+
+#title {
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.melted {
+    color: #b89f22;
+    font-size: 300%;
+    margin: 0;
+}
+
+.smile {
+    color: #b89f22;
+    font-size: 300%;
+    margin: 0;
+}
+
+.logo_add {
+    height: 120px;
+}
+
+.description {
+    font-size: 25px;
+    margin: 0;
+    padding: 20px;
+    line-height: 40px;
+}
+
+#add_to_cart {
+    height: 60px;
+}
+
+.add_to_cart {
+    background-color: transparent;
+    border: none;
+    font-family: "Rye", serif;
+    width: 50px;
+    font-size: 20px;
+    }

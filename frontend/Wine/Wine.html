@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/drinks.css">
+    <link rel="stylesheet" href="styles/general/general.css">
+    <link rel="stylesheet" href="styles/firstAdd.css">
+    <link rel="stylesheet" href="styles/contact_info.css">
+    <link rel="stylesheet" href="styles/adds.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lacquer&family=Mea+Culpa&family=Rye&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #000000, #69653f, #b3b736, #e3df03);
+        background-image: url('img/cheshire_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        }
+
+
+        #nav_bar{
+            background-image: url('img/navbar_background.png');
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            background-color: rgba(131, 18, 149, 0.7); 
+            background-blend-mode: overlay; 
+            padding: 10px;
+            
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 90px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-color: none;
+        }
+    
+    #drink_options {
+        background-image: url('img/cheshire.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(118, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+    }
+
+
+</style>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div id="nav_bar" >
+        <div id="home_button">
+            <a href="../Heart/Heart.html">
+                <button class="home_button">
+                    <img class="home_smile" src="logos/heart.png" alt="Home">
+                </button>
+            </a>
+            
+        </div>
+        
+        <div id="drink_category">
+            <a href="../Tequila/Tequila.html">
+                <button class="tequila">Tequila</button>
+            </a>
+            <a href="../Whiskey/Whiskey.html">
+                <button class="whiskey">Whiskey</button>
+            </a>
+            <a href="../Wine/Wine.html">
+                <button class="wine">Wine</button>
+            </a>
+            <a href="../Rum/Rum.html">
+                <button class="rum">Rum</button>
+            </a>
+            
+        </div>
+        <div id="cart">
+            <button class="cart">
+                <img src="img/cart.png" alt="" class="cart1">
+            </button>
+        </div>
+    </div>
+
+    <div id="drink_section">
+        <div id="drink_options">
+            <div id="drink_row1">
+                <div id="drink">
+                    <a href="../Cat/Cat.html">
+                        <button class="cat_drink">
+                            <img src="logos/cat_logo.png" alt="" class="cat_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="drink_row2">
+                <div id="drink">
+                    
+                    <a href="../Heart/Heart.html">
+                        <button class="heart_drink">
+                            <img src="logos/heart.png" alt="" class="heart_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

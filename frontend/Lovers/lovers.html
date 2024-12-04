@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovers</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/drinks.css">
+    <link rel="stylesheet" href="styles/general/general.css">
+    <link rel="stylesheet" href="styles/firstAdd.css">
+    <link rel="stylesheet" href="styles/contact_info.css">
+    <link rel="stylesheet" href="styles/adds.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lacquer&family=Mea+Culpa&family=Rye&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #000000, #69653f, #b3b736, #e3df03);
+        background-image: url('img/lover_background.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+    }
+
+
+    #nav_bar{
+        background-image: url('img/navbar_background.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        background-blend-mode: overlay; 
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-color: none;
+        }
+    
+    #drink_options {
+        background-image: url('img/lover.png');
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(226, 225, 225, 0.4); 
+        background-blend-mode: overlay; 
+    }
+
+
+
+
+
+    #first_add_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #ads {
+        display: flex;
+        flex: 1;
+        max-width: 1400px;
+        padding: 19px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #add1 {
+        display: flex;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: "Mea Culpa", cursive;
+    }
+
+    #add1_image {
+        background-image: url('img/add1_background.png');
+        box-shadow: 4px 4px 10px rgba(34, 33, 33, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.6); 
+        background-blend-mode: overlay; 
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding: 10px;
+        
+    }
+
+    #title_image1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding-right: 20px;
+        padding-right: 40px;
+    }
+
+    .title1 {
+        font-size: 300%;
+        margin-left: 30px;
+    }
+
+    .img1 {
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .text1 {
+        font-size: 200%;
+    }
+
+    #price1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .price1 {
+        font-size: 200%;
+        margin-left: 30px;
+    }
+
+    .addToCart1 {
+        font-size: 200%;
+        font-family: "Mea Culpa", cursive;
+        background-color: transparent;
+        border: none;
+        margin-right: 20%;
+        border-radius: 30%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #add2 {
+        display: flex;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: "Mea Culpa", cursive;
+    }
+
+    #add2_image {
+        background-image: url('img/add2_background.png');
+        box-shadow: 4px 4px 10px rgba(34, 33, 33, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.6); 
+        background-blend-mode: overlay; 
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding: 10px;
+        
+    }
+
+    #title_image2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding-right: 20px;
+        padding-right: 40px;
+    }
+
+    .title2 {
+        font-size: 300%;
+        margin-left: 30px;
+    }
+
+    .img2 {
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 80px;
+        border-color: #000000;
+        border-width: 6px;
+        border-style: solid;
+    }
+
+    .text2 {
+        font-size: 200%;
+    }
+
+    #price2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .price2 {
+        font-size: 200%;
+        margin-left: 30px;
+    }
+
+    .addToCart2 {
+        font-size: 200%;
+        font-family: "Mea Culpa", cursive;
+        background-color: transparent;
+        border: none;
+        margin-right: 20%;
+        border-radius: 30%;
+    }
+    
+    
+</style>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div id="nav_bar" >
+        <div id="home_button">
+            <a href="../Lovers/Lovers.html">
+                <button class="home_button">
+                    <img class="home_smile" src="logos/lovers.png" alt="Home">
+                </button>
+            </a>
+            
+        </div>
+        
+        <div id="drink_category">
+            <a href="../Tequila/Tequila.html">
+                <button class="tequila">Tequila</button>
+            </a>
+            <a href="../Whiskey/Whiskey.html">
+                <button class="whiskey">Whiskey</button>
+            </a>
+            <a href="../Wine/Wine.html">
+                <button class="wine">Wine</button>
+            </a>
+            <a href="../Rum/Rum.html">
+                <button class="rum">Rum</button>
+            </a>
+            
+        </div>
+        <div id="cart">
+            <a href="../Lovers/Lovers.html">
+                <button class="cart">
+                    <img src="img/cart.png" alt="" class="cart1">
+                </button>
+            </a>
+            
+        </div>
+    </div>
+
+    <div id="drink_section">
+        <div id="drink_options">
+            <div id="drink_row1">
+                <div id="drink">
+                    <a href="../Smile_Face/smileFace.html">
+                        <button class="smile_drink">
+                            <img src="logos/smile.png" alt="" class="smile_logo">
+                        </button>
+                    </a>
+                    <a href="../Catrina/Catrina.html">
+                        <button class="catrina_drink">
+                            <img src="logos/muerte.png" alt="" class="cartrina_logo">
+                        </button>
+                    </a>
+                    <a href="../Cat/Cat.html">
+                        <button class="cat_drink">
+                            <img src="logos/cat_logo.png" alt="" class="cat_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="drink_row2">
+                <div id="drink">
+                    <a href="../Lovers/Lovers.html">
+                        <button class="lovers_drink">
+                            <img src="logos/lovers.png" alt="" class="lovers_logo">
+                        </button>
+                    </a>
+                    <a href="../Heart/Heart.html">
+                        <button class="heart_drink">
+                            <img src="logos/heart.png" alt="" class="heart_logo">
+                        </button>
+                    </a>
+                    <a href="../Kracken/Kracken.html">
+                        <button class="Kracken_drink">
+                            <img src="logos/kracken.png" alt="" class="kracken_logo">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="first_add_section">
+        <div id="ads">
+            <div id="add1">
+                <div id="add1_image">
+                    <div id="title_image1">
+                        <img src="img/add1_img.png" alt="" class="img1">
+                        <p class="title1">
+                            Virgin Lovers
+                        </p>
+                        
+                    </div>
+                    <div id="text1">
+                        <p class="text1">
+                            Virgen Lovers Tequila is a premium, handcrafted spirit that celebrates the perfect harmony of faith, love, and tradition. Featuring the serene image of the Virgin Mary, this beautifully designed bottle evokes both spiritual devotion and timeless romance. The intricate details and soft hues capture the essence of Mexican heritage, making it a true work of art.
+Crafted with the finest ingredients, Virgen Lovers offers a smooth, rich taste.
+💎 Priced at $499.99, Virgen Lovers Tequila is a luxurious experience that blends reverence and elegance in every drop.
+
+                        </p>
+                    </div>
+                    <div id="price1">
+                        <p class="price1">$499.99</p>
+                        <button onclick="addToCart({ id: 2, name: 'Lovers', price: 499.99 })">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADD2 -->
+            <div id="add2">
+                <div id="add2_image">
+                    <div id="title_image2">
+                        <img src="img/add2_img.webp" alt="" class="img2">
+                        <p class="title2">
+                            Virgin Lovers
+                        </p>
+                        
+                    </div>
+                    <div id="text2">
+                        <p class="text2">
+                            The Lovers Tequila bottle is a work of art, featuring delicate lace patterns and soft pastel hues, perfectly complemented by a romantic couple and a serene garden backdrop. It’s a tribute to the enduring beauty of love, with each sip transporting you to a world of elegance and passion.
+🍸 Lovers Tequila is crafted with the finest ingredients, delivering an exceptional taste profile that’s smooth, bold, and unforgettable. Whether you’re celebrating a special occasion or savoring a quiet moment, this tequila is the perfect companion.
+💎 Priced at $499.99, Lovers Tequila is for those who seek luxury, craftsmanship, and the magic of love in every bottle. Don’t just drink tequila—celebrate it.
+
+                        </p>
+                    </div>
+                    <div id="price2">
+                        <p class="price2">$499.99</p>
+                        <button onclick="addToCart({ id: 2, name: 'Lovers', price: 499.99 })">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CONTACT INFO -->
+    <div id="contact_info_section">
+        <div id="contact_info">
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 123 Whisky Lane, Suite 456, Barrelsville, KY 40204, USA</p>
+                <p><strong>Phone:</strong> 1-800-SMILE-ON (1-800-764-5366)</p>
+                <p><strong>Email:</strong> <a href="mailto:cheers@MeltedSmileWhisky.com">cheers@MeltedSmileWhisky.com</a></p>
+                <p><strong>Website:</strong> <a href="https://www.MeltedSmileWhisky.com">www.MeltedSmileWhisky.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Cart/cart.js"></script>   
+    
+</body>
+</html>
